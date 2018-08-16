@@ -1,3 +1,5 @@
+
+/*
 function myFunction() {
     document.getElementById("demo").innerHTML = "Paragraph changed.";
         window.alert(myFunction);
@@ -13,3 +15,20 @@ function myFunction1() {
 }
 
 myFunction1();
+
+
+
+document.getElementById("demo5").innerHTML =
+"The temperature is " + toCelsius(77) + " Celsius";
+
+function toCelsius(fahrenheit) {
+    return (5/9) * (fahrenheit-32);
+} 
+
+toCelsius();
+
+*/
+ var person = {name = 'John', age = '50'};
+
+ document.getElementById('demo6').innerHTML = 
+ person.name + ' is ' + person.age + ' years old.'
