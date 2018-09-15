@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Javascript Practice 1</title>
+</head>
+<body>
+
+
+    <h2> What can JavaScript do ? </h2>
+
+
+    <p id="demo"> JavaScript can change HTML content. </p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = " Hello JavaScript !"'> Click Me!! </button>
+
+
+    <p> In this case JavaScript can change the value of the src (source) attribute of an image </p>
+    <button type="button" onclick='document.getElementById("myImage").src="/JavascriptPractice/assets/scorpion2.png"'> Fake Scorpion  </button>
+    <img id="myImage" src="/JavascriptPractice/assets/scorpion.png" style="width: 100px">
+    <button type="button" onclick='document.getElementById("myImage").src="/JavascriptPractice/assets/scorpion.png"'> Real Scorpion </button>
+
+
+    <p id="demo2"> JavaScript can change the style of an HTML element. </p>
+    <button type="button" onclick="document.getElementById('demo2').style.color ='aqua'"> Freshh </button>
+
+
+    <p id="demo3">JavaScript can hide HTML elements.</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display='none'"> CLICKK? </button>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    <h2>My First Web Page</h2>
+    <p>My First Paragraph.</p>
+    <p id="demo5"></p>
+    <button type="button" onclick="document.write(11 + 20)"> i will delete the existing HTML content  </button>
+
+
+    <br>
+    <br>
+
+    <p id="demo6">  </p>
+
+    <br>
+    <br>
+    <button type="button" onmousemove="myFunction()"> Block action </button>
+    <p id="demo7">  </p>
+    <p id="demo8">  </p>
+
+
+
+
+    <div class="clicker"> Click me! </div>
+    <button class="clicker2"> Click me! </button>
+    <p paragraf1="paragraf1">  </p>
+
+        <script>
+
+        document.getElementById("demo5").innerHTML = 5 + 6;
+        document.write(5 + 6);
+        window.alert( 'If you want to see me again refresh the page' );
+        console.log('use me for debugging purposes');
+
+        var x, y, z; //Statement 1
+        x = 5; //Statement 2
+        y = 10; //Statement 3
+        z = x + y; //Statement 4    
+        document.getElementById('demo6').innerHTML = 'The value of z is ' + z + '.';
+
+
+      	var arr = [ 'https://www.google.ro', 'Gamv.eu', 80];
+        function functieArray(val, index) {
+            if (index == 1)
+            {
+                document.write('</br>')
+                document.write( index +  ' = ' + val + '<br>');
+            }
+        }
+        
+        
+
+        </script>
+
+
+    <script src="/utilities/jquery/jquery.js"></script>
+    <script src="/utilities/popper/popper.js"></script>	
+    <script src="/utilities/bootstrapjs/bootstrap.min.js"></script>
+    <script src="/JavascriptPractice/index2.js"></script>
+</body>
+</html>
